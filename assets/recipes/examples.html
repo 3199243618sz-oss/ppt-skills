@@ -1,0 +1,17 @@
+<!-- Generic custom fragments. Supply every claim, price, task and translation in the new project. -->
+<!-- Pricing: call DeckPricing.render(container, rows, labels) with current-project data. -->
+<div data-pricing-container></div>
+
+<!-- Flow: same DOM contract as the base template. Do not load scene-controller.js together with js/scenes.js. -->
+<div class="workflow">
+  <article data-flow-step><h3>步骤一 / Step one</h3><p>待填写 / To be supplied</p></article>
+  <article data-flow-step><h3>步骤二 / Step two</h3><p>待填写 / To be supplied</p></article>
+  <article data-flow-step><h3>步骤三 / Step three</h3><p>待填写 / To be supplied</p></article>
+</div>
+<div class="flow-controls"><button data-flow-play>播放 / Play</button><button data-flow-replay>重播 / Replay</button><button data-flow-all>完整显示 / Show all</button><span data-flow-status></span></div>
+
+<!-- Manual scenario selection, no automatic rotation. Supply current-project scenario labels/content. -->
+<div class="recipe-scenarios">
+  <nav aria-label="Scenarios"><button data-ops-choice="0">场景一 / Scenario one</button><button data-ops-choice="1">场景二 / Scenario two</button></nav>
+  <div><article data-ops-panel="0">待填写 / To be supplied</article><article data-ops-panel="1" hidden>待填写 / To be supplied</article></div>
+</div>
